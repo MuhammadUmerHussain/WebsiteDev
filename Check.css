@@ -9,6 +9,28 @@
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size:4.5rem;
+    color: var(--black);
+}
+.heading span{
+    position: relative;
+    z-index: 0;
+}
+
+.heading span ::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index:-1;
+
+
+}
+
 .btn{
     display:inline-block ;
     margin-top:1rem;
@@ -245,7 +267,95 @@ background: var(--black);
 .icons-container .icons:hover .content p {
     color: #eee;
 }
+.vehicles .vehicles-slider{
+    padding-bottom: 5rem;
+}
+.vehicles .vehicles-slider .box{
+    text-align: center;
+    
+}
+.vehicles .vehicles-slider .box img{
+    width: 100%;
+}
+.vehicles .vehicles-slider .box .content{
+    padding-top: 1rem;
+}
+.vehicles .vehicles-slider .box .content h3 {
+    padding-top: 2.5rem;
+    color: var(--black);
+}
+.vehicles .vehicles-slider .box .content .price {
+    font-size: 2.5rem;
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: bolder;
 
+}
+.vehicles .vehicles-slider .box .content .price span {
+    font-size: 1.5rem;
+    color: var(--light-yellow);
+font-weight: normal;}
+
+.swiper-pagination-bullet-active{
+    background:var(--yellow) ;
+}
+.vehicles .vehicles-slider .box .content p {
+   font-size: 1.6rem;
+   padding: 1rem;
+   padding-top: 1.5rem;
+   border-top: var(--border);
+   color: var(--light-color);
+}
+.vehicles .vehicles-slider .box .content p span {
+    color: var(--yellow);
+    font-size: .8rem;
+    padding: 0 .5rem;
+}
+
+.services .box-container{
+    display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1rem;
+}
+
+.services .box-container .box{
+   text-align: center;
+   padding: 2rem;
+   border-radius: .5rem;
+   box-shadow: var(--box-shadow);
+   border: var(--border);
+}
+
+.services .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    background: var(--yellow);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.services .box-container .box h3{
+    color: var(--black);
+    font-size: 2.2rem;
+}
+.services .box-container .box p {
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.services .box-container .box:hover {
+    background: var(--black);
+}
+.services .box-container .box:hover h3 {
+    color: #fff;
+}
+
+.services .box-container .box:hover p {
+    color: #eee;
+}
 
 
 
