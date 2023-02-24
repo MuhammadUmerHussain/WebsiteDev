@@ -72,3 +72,28 @@ document.querySelector(".home").onmouseleave = (e) => {
      },
    },
  });
+ var swiper = new Swiper(".featured-slider", {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   loop: true,
+   grabCursor: true,
+   autoplay: {
+     delay: 2500,
+     disableOnInteraction: false,
+   },
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+   breakpoints: {
+     0: {
+       slidesPerView: 1,
+     },
+     768: {
+       slidesPerView: 2,
+     },
+     991: {
+       slidesPerView: 3,
+     },
+   },
+ });

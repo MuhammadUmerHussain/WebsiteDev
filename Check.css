@@ -356,8 +356,78 @@ font-weight: normal;}
 .services .box-container .box:hover p {
     color: #eee;
 }
+.featured .featured-slider{
+    padding: 1rem;
+    padding-bottom:4rem;
 
+}
+.featured .featured-slider .box {
+   text-align: center;
+   padding:2rem;
+   box-shadow:var(--box-shadow);
+   border:var(--border);
+   border-radius:.5rem;
 
+}
+.featured .featured-slider .box img{
+    height: 15rem;;
+}
+.featured .featured-slider .box:hover img {
+    transform: scale(.9);
+    ;
+}
+
+.featured .featured-slider .box h3{
+    font-size:2.2rem;
+    color:var(--black);
+}
+.featured .featured-slider .box .stars {
+    padding:1rem 0;
+}
+.featured .featured-slider .box .stars i{
+    font-size: 1.7rem;
+    color: var(--yellow);
+}
+.featured .featured-slider .box .price {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    
+}
+.contact .row form{
+    flex:1 1 42rem;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+.contact .row form h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+.contact .row form .box{
+    margin: 2rem 0;
+    width:100%;
+    border: var(--border);
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    border-radius: .5rem;
+}
+
+.contact .row form textarea{
+height: 15rem;
+resize: none;
+
+}
 
 
 
